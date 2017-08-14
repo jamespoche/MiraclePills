@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,27 +19,69 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="L5q-Fq-Iz3">
-                                <rect key="frame" x="102.5" y="42" width="115" height="112"/>
+                                <rect key="frame" x="135" y="42" width="105" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="53J-sY-pEY"/>
-                                    <constraint firstAttribute="width" constant="115" id="B9t-Ew-76w"/>
+                                    <constraint firstAttribute="width" constant="105" id="B9t-Ew-76w"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lX1-Ox-RaJ">
+                                <rect key="frame" x="122.5" y="179" width="131" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="2gK-T4-Ll4"/>
+                                    <constraint firstAttribute="height" constant="21" id="zEh-qC-EfL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxg-i9-dj9">
+                                <rect key="frame" x="161.5" y="208" width="52" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="3t5-3h-eZG"/>
+                                    <constraint firstAttribute="width" constant="52" id="z6r-3L-Nam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkL-c9-ai4" userLabel="Divider">
+                                <rect key="frame" x="36" y="241" width="303" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qua-m8-ikL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FULL NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKI-ur-3TX">
+                                <rect key="frame" x="40" y="268" width="688" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lX1-Ox-RaJ" firstAttribute="top" secondItem="L5q-Fq-Iz3" secondAttribute="bottom" constant="25" id="0v0-AN-kXh"/>
                             <constraint firstItem="L5q-Fq-Iz3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4xd-fY-tm5"/>
+                            <constraint firstItem="hxg-i9-dj9" firstAttribute="centerX" secondItem="lX1-Ox-RaJ" secondAttribute="centerX" id="DFm-dn-2qn"/>
+                            <constraint firstItem="MkL-c9-ai4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="EjB-qR-TI2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MkL-c9-ai4" secondAttribute="trailing" constant="20" id="RyW-tO-Ph7"/>
                             <constraint firstItem="L5q-Fq-Iz3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="Y7M-Hb-eKI"/>
+                            <constraint firstItem="MkL-c9-ai4" firstAttribute="top" secondItem="hxg-i9-dj9" secondAttribute="bottom" constant="10" id="eti-rU-Aof"/>
+                            <constraint firstItem="MkL-c9-ai4" firstAttribute="centerX" secondItem="hxg-i9-dj9" secondAttribute="centerX" id="ggF-Mn-Q4M"/>
+                            <constraint firstItem="lX1-Ox-RaJ" firstAttribute="centerX" secondItem="L5q-Fq-Iz3" secondAttribute="centerX" id="mmE-4d-vih"/>
+                            <constraint firstItem="hxg-i9-dj9" firstAttribute="top" secondItem="lX1-Ox-RaJ" secondAttribute="bottom" constant="8" id="xu9-q3-2hX"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.875" y="36.971830985915496"/>
+            <point key="canvasLocation" x="31.25" y="36.9140625"/>
         </scene>
     </scenes>
     <resources>
