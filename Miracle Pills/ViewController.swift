@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var statePickerBtn: UIButton!
+    @IBOutlet weak var statePicker: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.view.backgroundColor = UIColor.purple
@@ -20,6 +22,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func stateBtnPressed(_ sender: Any) {
+    }
 
 }
 
